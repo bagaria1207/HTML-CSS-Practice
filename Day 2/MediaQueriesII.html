@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .wrapper {
+            border: 2px solid black;
+            padding: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        @media only screen and (max-width: 600px) {
+            #div1 {
+                background-color: blue;
+            }
+        }
+
+        @media only screen and (min-width: 905px) {
+            #div2 {
+                background-color:orange;
+            }
+        }
+        @media only screen and (min-width:650px), (max-width: 850px) {
+            #div3 {
+                background-color:pink;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="div1" class="wrapper">This div turns blue when screen width is less than 550px</div>
+    <div id="div2" class="wrapper">This div turns orange when screen width is less than 990px</div>
+    <div id="div3" class="wrapper">This div turns pink when screen width is less than 700px</div>
+</body>
+</html>

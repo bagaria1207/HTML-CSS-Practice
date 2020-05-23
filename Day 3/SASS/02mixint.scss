@@ -1,0 +1,17 @@
+@mixin border-radius($radius){
+    border-radius: $radius;
+}
+
+.box {
+    @include border-radius(25px);
+    border: 3px solid deeppink;
+    text-align: center;
+}
+
+@mixin style {
+    h1 {
+        color: orange;
+    }    
+}
+
+@include style;

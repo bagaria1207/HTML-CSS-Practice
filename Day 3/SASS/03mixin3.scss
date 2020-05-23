@@ -1,0 +1,19 @@
+// @mixin borderred($color, $width:2px){
+//     color: $color;
+//     border: $width;
+// }
+
+// .myDiv {
+//     @include borderred($color, red, $width:10px);
+// }
+
+@mixin linearGradient ($direction, $gradient...) {
+    background-color: nth($list: $gradient, $n: 4);
+    background-image: linear-gradient($direction , $gradient);
+    direction: $direction;
+    
+}
+
+.myDiv {
+    @include linearGradient(to right, magenta, red, rgb(94, 0, 0), orange);
+}

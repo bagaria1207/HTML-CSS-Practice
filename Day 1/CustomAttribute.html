@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <article id="electricCars" class="cars" data-index="q12" data-color="color5"></article>
+    <script>
+        var eCar = document.getElementById("electricCars")
+        document.write("<br>Index: "+eCar.getAttribute('data-color'));
+        eCar.dataset.color = "orange";
+        document.write("<br>Color: "+eCar.getAttribute('data-color'))
+    </script>
+</body>
+</html>

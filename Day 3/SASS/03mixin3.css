@@ -1,0 +1,7 @@
+.myDiv {
+  background-color: orange;
+  background-image: -webkit-gradient(linear, left top, right top, from(magenta), color-stop(red), color-stop(#5e0000), to(orange));
+  background-image: linear-gradient(to right, magenta, red, #5e0000, orange);
+  direction: to right;
+}
+/*# sourceMappingURL=03mixin3.css.map */

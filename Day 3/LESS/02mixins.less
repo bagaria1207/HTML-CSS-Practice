@@ -1,0 +1,14 @@
+#circle(@size: 25px) {
+    background-color: yellowgreen;
+    border-radius: 100%;
+    width: @size;
+    height: @size;
+}
+
+#small-circle {
+    #circle
+}
+
+#big-circle {
+    #circle(100px)
+}

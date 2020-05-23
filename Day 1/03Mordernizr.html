@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+</head>
+<body>
+    <script>
+        if(Modernizr.audio){
+            alert('Supported Audio');
+        }
+        else{
+            alert('Not Supported');
+        }
+
+        if(Modernizr.video){
+            alert('Supported video');
+        }
+        else{
+            alert('Not Supported');
+        }
+
+        if(Modernizr.canvas){
+            alert('Supported canvas');
+        }
+        else{
+            alert('Not Supported');
+        }
+
+        if(Modernizr.datetime){
+            alert('Supported datetime');
+        }
+        else{
+            alert('Not Supported');
+        }
+
+        if(Modernizr.webStorage){
+            alert('Supported Storage');
+        }
+        else{
+            alert('Not Supported');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+p {
+  background-color: orange;
+}
+ul {
+  background-color: yellow;
+  padding: 10px;
+  list-style: none;
+}
+ul li {
+  background-color: yellow;
+  border-radius: 3px;
+  margin: 10px;
+}

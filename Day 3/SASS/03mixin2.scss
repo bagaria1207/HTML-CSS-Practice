@@ -1,0 +1,12 @@
+@mixin style {
+    .mydiv {
+        color: orange;
+        background-color: palegreen;
+    }
+
+    h1 {
+        color: black;
+    }
+}
+
+@include style;

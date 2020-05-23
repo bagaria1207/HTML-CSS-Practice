@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: burlywood;
+        }
+
+        @media screen {
+            p, h2 {
+                color:red;
+                font-size:16px;
+            }
+        }
+
+        @media print {
+            p,h2 {
+                color:green;
+                font-size: 32px;
+            }
+        }
+
+        @media screen and (orientation: landscape){
+            body{
+                background-color:blueviolet;
+            }
+        }
+
+        /* The below setting i.e: use of 'only' should be aaplied only to mordern browsers */
+        @media only screen and (orientation: landscape){
+            body{
+                background-color:blueviolet;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <p>This is a Simple Para</p>
+    <h2>This is H2 Demo Heading</h2>
+</body>
+</html>

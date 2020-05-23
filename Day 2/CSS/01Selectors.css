@@ -1,0 +1,51 @@
+/* tag selector */
+/* div{
+    background-color: aqua
+} */
+
+/* id Selector */
+/* #list1 {
+    font-style: italic;
+    font-size: x-large;
+} */
+
+/* Class selector */
+/* .a {
+    color: tomato;
+} */
+
+/* li.b {
+    color: bisque;
+} */
+
+/* CSS3 Selector */
+
+/* All div and all p elements */
+/* div,p {
+    color: blue;
+} */
+
+/* All p inside Div elements SEPERATOR is space */
+/* div p {
+    color: violet;
+} */
+
+/* All p where parent is div */
+/* div>p{
+    color: wheat
+} */
+
+/* Select all p those are placed immediately after div element plus is the selector for this*/
+/* div+p{
+    background-color: rgb(226, 53, 53);
+} */
+
+/* Select every div that is preceded by p element*/
+/* p~div {
+    background-color: rgb(45, 87, 73);
+} */
+
+/* Select every div those are placed immediately after p element  */
+/* p+div{
+    background-color: yellow;
+} */

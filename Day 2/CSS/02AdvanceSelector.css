@@ -1,0 +1,91 @@
+/* Pseudo Class -> Used to define special state of and element*/
+/* selector:state */
+/* div:hover {
+    background-color: aquamarine;
+} */
+
+/* div:hover {
+    background-color: aquamarine;
+}
+p:hover {
+    background-color: aquamarine;
+} */
+
+/* DOUBT Cleared*/
+/* div:hover,p:hover{
+    background-color: aquamarine;
+} */
+/* div>p:hover{
+    background-color: aquamarine;
+} */
+
+/* p:first-of-type {
+    background-color: yellow;
+} */
+
+/* p:last-of-type {
+    background-color: aquamarine;
+} */
+
+/* ul:only-of-type {
+    background-color: skyblue;
+} */
+
+/* unvisited */
+/* a:link {
+    background-color: thistle;
+} */
+
+/* visited */
+/* a:visited{
+    background-color: coral;
+} */
+
+/* a:hover {
+    background-color: chartreuse;
+} */
+
+/* active */
+/* a:active{
+    background-color: cornflowerblue;
+} */
+
+/* to hover all the elements individually  */
+/* body *:hover{
+    background-color: aquamarine
+} */
+
+
+
+/* Pseudo Elements -> Used to specify parts of an html element*/
+/* p::first-letter{
+    color: red;
+} */
+
+/* p::first-line{
+    color: purple;
+} */
+
+/* h1::before{
+    content:url("../images/smiley.jpg")
+}
+
+h1::after{
+    content:url("../images/smiley.jpg")
+} */
+
+/* div::selection{
+    background-color: yellow;
+    color: red
+} */
+
+/* body *::selection{
+    background-color: yellow;
+    color: red
+}
+or
+::selection{
+    background-color: yellow;
+    color: red
+} */
+

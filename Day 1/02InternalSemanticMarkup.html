@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Inline Markup</title>
+</head>
+<body>
+    <p>This is an <mark>important</mark> para!!</p>
+    <!-- Meter -->
+    <!-- Meter Pollution -->
+    Meter Pollution <br><br>
+    Meter1: <meter value="95" min="0" max="100" low="40" high="80" optimum="0"></meter><br>
+    Meter2: <meter value="25" min="0" max="100" low="40" high="80" optimum="0"></meter><br>
+    Meter3: <meter value="15" min="0" max="100" low="40" high="80" optimum="0"></meter><br>
+    Meter4: <meter value="65" min="0" max="100" low="40" high="80" optimum="0"></meter><br><br>
+
+    <!-- Progress -->
+    Progress 1: <progress value="50" max="1000"></progress><br>
+    Progress 2: <progress max="1000"></progress><br>
+    Progress 3: <progress value="50"></progress>
+    
+    <p>Office starts at <time>09:00</time>in the Morning</p>
+    <p>I have a date on <time datetime="2021-04-02 20:00">Valentine's day</time></p>
+    <input type="text" value="2">+
+    <input type="text" value="2">=
+    <output>4</output><br><br>
+
+    <form id="multForm" oninput="op.value = (Val1.valueAsNumber) * (Val2.valueAsNumber)">
+        <input type="number" name="Val1"> X
+        <input type="number" name="Val2"> = 
+        <output name="op" form="multForm"></output>
+    </form>
+    <br><br>
+    <div>
+        <details>
+                This is introduction to HTML5 & CSS3. 
+                This is introduction to HTML5 & CSS3. <br>
+                This is introduction to HTML5 & CSS3. 
+                This is introduction to HTML5 & CSS3.
+        </details>
+    </div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="./CSS/01Selectors.css"> -->
+    <!-- <link rel="stylesheet" href="./CSS/02AdvanceSelector.css"> -->
+    <style>
+            #div1 {
+                background-color: rgba(194, 194, 245, 0.2);
+                /* 
+                hue -> Similar to color wheel   0 360 -> RED
+                                                120   -> GREEN
+                                                240   -> Blue
+                saturation -> intensity of color
+                0% completely denatured(grayscale)
+                100% fully natured (full color)
+    
+                lightness
+                alpha 
+                */
+            }
+        </style>
+</head>
+<body>
+        <div id="div1">This is very first div</div>
+        <p>This is first para </p>
+        <h1>Hello, Smile Please!</h1>
+        <ul id="list1">
+            <li class='a'>item 1</li>
+            <li class='a'>item 2</li>
+            <li class='b'>item 3</li>
+            <li class='b'>item 4</li>
+        </ul><br>
+     
+        <span>span between div and para</span>
+        <div>
+            This is Div1 <br>
+            <p>
+                I am nested para1!
+            </p>
+            <p>
+                I am nested para2!
+            </p>
+        </div><br>
+        <span>span between div and para</span>
+        <p class="a">This is paragraph 1
+            <div>
+                This is Div 2 inside para 1
+            </div>
+        </p><br>
+     
+        <div>
+            <p id='para1'>This is para2 inside a div!
+                    <p>first para inside para1</p>
+                    <p>second para inside para1</p>
+                    <p>descendent second para</p>
+            </p>
+            <span><p>I am descendent para - Not a child of div!</p></span>
+        </div><br>
+     
+        <p class='b'>This is pargraph 3!
+            <p>nested first para</p>
+            <p>nested second para</p>
+        </p>
+     
+        <div>
+            This is Div 3
+        </div>
+        <p>This is another paragraph.
+            <br> including break tag in between.
+        </p>
+        <p>Last para</p>
+        <a href="https://www.google.com">This is a link</a>
+        <a href="https://www.yahoo.com">This is a link</a>
+</body>
+</html>

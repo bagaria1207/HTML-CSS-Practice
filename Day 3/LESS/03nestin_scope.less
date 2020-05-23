@@ -1,0 +1,26 @@
+// ul {
+//     background-color: yellowgreen;
+//     padding: 10px;
+//     list-style: none;
+//     li {
+//         background-color: red;
+//     }
+// }
+
+
+@text-color: orange;
+
+p {
+    background-color: orange;
+}
+ul {
+    @text-color: yellow;
+    background-color: yellow;
+    padding: 10px;
+    list-style: none;
+    li{
+        background-color: @text-color;
+        border-radius: 3px;
+        margin: 10px;
+    }
+}

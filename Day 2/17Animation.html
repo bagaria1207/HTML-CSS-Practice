@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        @keyframes slidein {
+            from {
+                margin-left: 90%;
+            }
+            to {
+                margin-left: 0%;
+            }
+        }
+
+        @keyframes resize{
+            from{
+                height: 0px;
+                background-color: yellow;
+            }
+            to{
+                height: 250px;
+                background-color: green;
+            }
+        }
+
+        @keyframes multicolor {
+            0%{background-color: red; margin-top: 0px; margin-left: 0px;}
+            25%{background-color: yellow; margin-top: 0px; margin-left: 100px;}
+            50%{background-color: green; margin-top:100px; margin-left: 100px}
+            75%{background-color:violet; margin-left:0px; margin-top:100px}
+            100%{background-color: blue;margin-left:0px; margin-top:0px}
+            /* from{
+                left: 150px;
+            }
+            to{
+                right: 20px;
+            } */
+        }
+        h1 {
+            animation: slidein 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        div {
+            position: relative;
+            width: 250px;
+            height: 250px;
+            background-color: red;
+            margin: 20px;
+            /* animation: resize 1s;*/
+            /* box-shadow: 10px 10px 5px rgb(161, 100, 77); */
+        }
+
+        .divClass {
+            animation-name: multicolor;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="team">Animation</h1>
+    <!-- <div id='div1'></div> -->
+    <div id="div2"></div>
+    <button style="margin:20px" id="btnAnimate">Animate Div!!</button>
+
+    <script>
+        // var dv = document.getElementById('team');
+        var dv = document.getElementById('div2');
+        var btn = document.getElementById('btnAnimate');
+
+        btn.onclick = function(){
+            dv.className = 'divClass';
+        }
+    </script>
+</body>
+</html>

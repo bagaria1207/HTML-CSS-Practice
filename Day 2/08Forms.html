@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- novalidate is applied on form for no validation on anything inside the form -->
+    <!-- <form action="https://www.google.com" id="myForm" method="GET" novalidate> -->
+    <form action="https://www.google.com" id="myForm" method="GET">
+        <fieldset>
+            <legend>Personal Details</legend>
+            <p>
+                <label for="fNAme">First Name :</label>
+                <input type="text" name="firstname" id="fName"
+                placeholder="Enter your First Name" required>
+            </p>
+    
+            <p>
+                <label for="lNAme">Last Name :</label>
+                <input type="text" name="lastname" id="lName" 
+                placeholder="Enter your Last Name" required>
+            </p>
+    
+            <label>Gender :</label>
+            <!-- name is kept common for grouping them both that is selecting any one radio button -->
+            Male <input type="radio" value="male" name="gender" required>
+            Female <input type="radio" value="female" name="gender">
+        </fieldset>
+        
+        <fieldset>
+            <legend>Address Details</legend>
+            <p>
+                <label> Select Location :</label>
+                <input type="text" list="loc" required>
+                <datalist id="loc">
+                    <option>Nul Stop</option>
+                    <option>HJ</option>
+                    <option>PT</option>
+                    <option>Blue Ridge</option>
+                </datalist>
+            </p>
+
+            <p>
+                <label>Zip Code :</label>
+                <!-- <input type="text" list="zip" pattern="[0-9]{6}" maxlength="6" required> -->
+                <input type="text" list="zip" pattern="\d{6}" maxlength="6" required>
+                <datalist id="zip">
+                    <option>01</option>
+                    <option>02</option>
+                    <option>03</option>
+                    <option>03</option>
+                </datalist>
+            </p>
+        </fieldset>
+        <br>
+        <input type="submit" value="Submit">
+        <!-- NoValidate is applied in here for button level validation of form -->
+        <input type="submit" formnovalidate value="draft">
+    </form>
+</body>
+</html>
